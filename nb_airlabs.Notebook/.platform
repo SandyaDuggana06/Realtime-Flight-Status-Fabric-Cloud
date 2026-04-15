@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "nb_airlabs"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "28254c90-b9fa-a9da-4991-92158ed1ae77"
+  }
+}

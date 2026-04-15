@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "LH_RealTimeFlightStatus"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "eabe7413-b065-8a77-40e1-7804c3f79ae5"
+  }
+}

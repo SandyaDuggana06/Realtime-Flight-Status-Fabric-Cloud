@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "RealTimeFlightStatus"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f83f01e6-a65b-a64c-4a52-eb97059f2a3c"
+  }
+}

@@ -1,0 +1,106 @@
+table flights_gold
+	lineageTag: 672c606e-8e03-4d75-a41b-c39bcc32a4d2
+	sourceLineageTag: [dbo].[flights_gold]
+
+	column flight_latitude
+		dataType: double
+		lineageTag: 3dd84652-ff6a-40e3-b8ca-8881ea757ce9
+		sourceLineageTag: flight_latitude
+		summarizeBy: sum
+		sourceColumn: flight_latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column flight_longitude
+		dataType: double
+		lineageTag: 728cf0b9-51e6-46cc-9e35-cdd5907693d2
+		sourceLineageTag: flight_longitude
+		summarizeBy: sum
+		sourceColumn: flight_longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column flight_icao
+		dataType: string
+		lineageTag: 73a1bfe9-a7ca-4cc2-b510-6da6f325eb59
+		sourceLineageTag: flight_icao
+		summarizeBy: none
+		sourceColumn: flight_icao
+
+		annotation SummarizationSetBy = Automatic
+
+	column arr_icao
+		dataType: string
+		lineageTag: 31d5504b-d2dc-479a-9f37-8aa7c6253d33
+		sourceLineageTag: arr_icao
+		summarizeBy: none
+		sourceColumn: arr_icao
+
+		annotation SummarizationSetBy = Automatic
+
+	column dep_icao
+		dataType: string
+		lineageTag: b2c5b863-4297-472e-9dbe-1035f4c4962b
+		sourceLineageTag: dep_icao
+		summarizeBy: none
+		sourceColumn: dep_icao
+
+		annotation SummarizationSetBy = Automatic
+
+	column arrival_airport_name
+		dataType: string
+		lineageTag: 7a161052-848a-41de-a768-dcceebfe2d01
+		sourceLineageTag: arrival_airport_name
+		summarizeBy: none
+		sourceColumn: arrival_airport_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column departure_airport_name
+		dataType: string
+		lineageTag: 24e098c7-ffdf-468f-a212-22c7b82220d5
+		sourceLineageTag: departure_airport_name
+		summarizeBy: none
+		sourceColumn: departure_airport_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column airline_name
+		dataType: string
+		lineageTag: e6ea036c-d993-45e5-b4a3-948d65b59404
+		sourceLineageTag: airline_name
+		summarizeBy: none
+		sourceColumn: airline_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 203338b7-07ca-47bd-a07c-79ce23a4be3b
+		sourceLineageTag: status
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column ingestion_time
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 486ee47a-7058-4f10-a196-76d7c6928f35
+		sourceLineageTag: ingestion_time
+		summarizeBy: none
+		sourceColumn: ingestion_time
+
+		annotation SummarizationSetBy = Automatic
+
+	partition flights_gold = entity
+		mode: directLake
+		source
+			entityName: flights_gold
+			schemaName: dbo
+			expressionSource: 'DirectLake - LH_RealTimeFlightStatus'
+

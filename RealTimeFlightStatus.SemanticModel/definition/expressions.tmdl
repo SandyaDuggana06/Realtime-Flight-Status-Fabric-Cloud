@@ -1,0 +1,11 @@
+expression 'DirectLake - LH_RealTimeFlightStatus' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/7e5444cf-f6c4-420a-9d25-5e86efa12407/c3f79ae5-7804-40e1-8a77-b065eabe7413", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 09d25c9c-74c2-4aa0-8b22-d42bea3ecf24
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[airlines_silver]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[airports_silver]"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[flights_silver]"}},"objectType":"Table"}]
+

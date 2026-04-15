@@ -1,0 +1,23 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "28254c90-b9fa-a9da-4991-92158ed1ae77",
+          "workspaceId": "00000000-0000-0000-0000-000000000000"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "FetchFlightDataFromAirlabsAPI",
+        "description": "This pipeline fetches the data of flights, airlines and airports. Cleans and saves the silver data in one lake. queries for the gold data and saves it in one lake",
+        "dependsOn": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.8.0/schema.json",
+  "name": "ce92b52a12c8bcab5469",
+  "position": {
+    "x": 1004.1950422228275,
+    "y": 338.9158267502043,
+    "z": 5,
+    "height": 293.727049850177,
+    "width": 276.15363661127759,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "barChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "flights_gold"
+                    }
+                  },
+                  "Property": "airline_name"
+                }
+              },
+              "queryRef": "flights_gold.airline_name",
+              "nativeQueryRef": "airline_name",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "flights_gold"
+                        }
+                      },
+                      "Property": "airline_name"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonNull(flights_gold.airline_name)",
+              "nativeQueryRef": "Count of airline_name"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "flights_gold"
+                      }
+                    },
+                    "Property": "airline_name"
+                  }
+                },
+                "Function": 5
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
