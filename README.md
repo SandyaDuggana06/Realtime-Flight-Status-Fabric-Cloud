@@ -6,6 +6,11 @@ This project demonstrates an end-to-end real-time analytics solution built using
 The solution showcases modern data engineering and BI practices, including streaming ingestion, scalable storage, and semantic modeling.
 
 ---
+## 📸 Dashboard Preview
+### 🌍 Flight Status Overview
+### 📍 Map Visualization (Real-Time Flights)
+### 📊 Top Airlines
+
 
 ## 🎯 Objectives
 - Build a real-time or near real-time data pipeline
