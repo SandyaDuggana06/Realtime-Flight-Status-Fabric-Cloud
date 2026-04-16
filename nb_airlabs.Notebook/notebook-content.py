@@ -58,7 +58,7 @@ logger = logging.getLogger(__name__)
 
 # CELL ********************
 
-API_KEY = "bdb2cd76-dfe5-4286-a7a1-2d50ec6eff67"
+API_KEY = "API_KEY"
 BASE_URL = "http://airlabs.co/api/v9/"
 
 # METADATA ********************
