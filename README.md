@@ -46,11 +46,11 @@ The platform is built using components from Microsoft Fabric:
 ---
 
 ## 📊 Key Features
-- ✨ Real-time / near real-time flight tracking  
-- 📉 Delay and performance monitoring  
-- 📍 Airline and route-level insights  
-- 📊 Interactive Power BI dashboards  
-- ⚡ Scalable architecture using Microsoft Fabric  
+1. Flight data ingested via API / streaming source  
+2. Processed using Fabric pipelines and dataflows  
+3. Stored in Lakehouse (Delta tables)  
+4. Semantic model created for reporting  
+5. Visualized through Power BI dashboards  
 
 ---
 
@@ -64,11 +64,12 @@ The platform is built using components from Microsoft Fabric:
 ---
 
 ## 📂 Repository Structure
-- `/Reports` → Power BI report definitions  
-- `/SemanticModels` → Data models for analytics  
-- `/Dataflows` → Transformation logic  
+- `/Reports` → Power BI reports  
+- `/SemanticModels` → Data models  
+- `/Dataflows` → Data transformation logic  
 - `/Pipelines` → Data ingestion workflows  
 - `/Notebooks` → Data processing scripts  
+- `/screenshots` → Dashboard visuals  
 
 ---
 
@@ -82,24 +83,25 @@ The platform is built using components from Microsoft Fabric:
 
 ## 📈 Business Value
 This solution enables:
-- Real-time operational monitoring of flight activity  
-- Faster identification of delays and disruptions  
-- Data-driven decision-making for aviation analytics  
+- Enables real-time monitoring of flight activity  
+- Provides insights into flight status distribution  
+- Highlights top-performing airlines  
+- Demonstrates scalable real-time analytics architecture   
 
 ---
 
 ## ⚠️ Important Notes
-- Data source credentials are not stored in Git  
-- Some configurations must be completed داخل the Fabric workspace  
-- Real-time performance depends on data source latency  
+- Real-time data connections cannot be publicly shared due to Power BI limitations  
+- Data source credentials are not included in this repository  
+- Screenshots are provided for demonstration purposes  
 
 ---
 
 ## 🌟 Highlights for Recruiters
-- End-to-end data pipeline implementation  
+- Built an end-to-end real-time data pipeline  
 - Hands-on experience with Microsoft Fabric  
-- Real-time data processing and analytics  
-- Strong integration between data engineering and BI  
+- Developed interactive dashboards in Power BI  
+- Worked with near real-time data processing  
 
 ---
 
