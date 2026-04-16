@@ -7,7 +7,7 @@ The solution showcases modern data engineering and BI practices, including strea
 
 ---
 ## 📸 Dashboard Preview
-![Flight Map](./screenshots/flight-map.png)
+![CompleteReport](./screenshots/CompleteReport.png)
 ### 🌍 Flight Status Overview
 ### 📍 Map Visualization (Real-Time Flights)
 ### 📊 Top Airlines
