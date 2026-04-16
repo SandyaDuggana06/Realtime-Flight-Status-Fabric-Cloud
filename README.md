@@ -12,6 +12,7 @@ The solution showcases modern data engineering and BI practices, including strea
 ![FlightStatusDistribution](./screenshots/FlightStatusDistribution.png)
 ### 📍 Map Visualization (Real-Time Flights)
 ![Realtimeflightstatusmap](./screenshots/Realtimeflightstatusmap.png)
+![Realtimeflightstatusmap_details](./screenshots/Realtimeflightstatusmap_details.png)
 ### 📊 Top Airlines
 ![TopAirlines](./screenshots/TopAirlines.png)
 
